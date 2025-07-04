@@ -1,0 +1,130 @@
+/* COMMON BASE STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.6s ease, color 0.6s ease;
+}
+.glass-card {
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+input[type="file"] {
+    display: none;
+}
+img {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+button, .back-btn, .custom-upload {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* ------------------------------------- */
+/* 🌟 THEME 1: Neon Glow (Modern + Techy) */
+/* ------------------------------------- */
+body.theme-neon {
+    background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+}
+.theme-neon .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.theme-neon h1 {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+.theme-neon .custom-upload {
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: white;
+}
+.theme-neon button,
+.theme-neon .back-btn {
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+    color: white;
+}
+.theme-neon button:hover,
+.theme-neon .custom-upload:hover,
+.theme-neon .back-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------ */
+/* 🌅 THEME 2: Sunset Vibes (Warm + Friendly) */
+/* ------------------------------------------ */
+body.theme-sunset {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+}
+.theme-sunset .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ffc1a1;
+}
+.theme-sunset h1 {
+    color: #d64c7f;
+}
+.theme-sunset .custom-upload {
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    color: white;
+}
+.theme-sunset button,
+.theme-sunset .back-btn {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+}
+.theme-sunset button:hover,
+.theme-sunset .custom-upload:hover,
+.theme-sunset .back-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------------ */
+/* 🌑 THEME 3: Dark Mode Elegance       */
+/* ------------------------------------ */
+body.theme-dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+.theme-dark .glass-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+.theme-dark h1 {
+    color: #bb86fc;
+}
+.theme-dark .custom-upload {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+}
+.theme-dark button,
+.theme-dark .back-btn {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: white;
+}
+.theme-dark button:hover,
+.theme-dark .custom-upload:hover,
+.theme-dark .back-btn:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detection Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-neon">
+  <div class="glass-card">
+    <h1>✅ Detection Results</h1>
+    <p><strong>📷 Original Image:</strong></p>
+    <img src="{{ input_image }}" alt="Original Image">
+    <p><strong>🔍 Detected License Plate:</strong></p>
+    <img src="{{ plate_image }}" alt="License Plate">
+    <p><strong>📝 Recognized Text:</strong></p>
+    <h2 class="highlight">{{ plate_text }}</h2>
+    <a href="/" class="back-btn">⬅ Back to Upload</a>
+  </div>
+</body>
+</html>
