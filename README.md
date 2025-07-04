@@ -7,18 +7,18 @@ This is a web-based application for automatic "License Plate Detection and Recog
 - View results on a clean and simple web interface.
 - Built using Flask, HTML/CSS, and a pre-trained PyTorch model.
 
-📁 Project Structure
-License_Plate/
-├── app.py # Main Flask application
-├── testing.py # Testing script
-├── best.pt # Trained PyTorch model for LPR
-├── LPRNet_custom1/ # Contains model definition and utilities
-├── static/
-│ ├── css/ # CSS styles
-│ └── uploads/ # Uploaded images
-├── templates/
-│ ├── index.html # Upload form page
-│ └── result.html # Results display page
+📁 Project Structure:
+- License_Plate/
+  - app.py → Main Flask application
+  - testing.py → Testing script
+  - best.pt → Trained PyTorch model
+  - LPRNet_custom1/ → Model definitions and utilities
+  - static/
+    - css/ → Styling
+    - uploads/ → Uploaded images
+  - templates/
+    - index.html → Upload form
+    - result.html → Results page
 
 🚀 How to Run
 Clone this repository:
